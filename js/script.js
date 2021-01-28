@@ -17,6 +17,11 @@ var app = new Vue({
     this.arrayInput = this.arrayInput.filter((element,index)=>{
        return index !== i
      })
+   },
+   important : function(i) {
+     this.arrayInput = this.arrayInput.filter((element,index)=>{
+        return index == i
+      })
    }
 },
 });

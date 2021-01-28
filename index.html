@@ -17,7 +17,7 @@
     </div>
     <div class="main-content">
       <div class="" v-for="(i,index) in arrayInput">
-        <p class="content">Da Fare: {{i}}</p><span @click="eliminate(index)">X</span>
+        <p class="content">Da Fare: {{i}}</p><span @click="eliminate(index)">X</span><span @click="important(index)">!</span>
       </div>
     </div>
   </div>
