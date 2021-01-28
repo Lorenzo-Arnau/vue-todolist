@@ -32,6 +32,7 @@ p,span{
   margin-top: 5px;
   display: inline-block;
   background-color: ivory;
+  text-transform: capitalize;
 }
 input{
   border-radius: 10px;
