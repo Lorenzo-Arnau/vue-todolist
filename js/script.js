@@ -19,10 +19,14 @@ var app = new Vue({
        return index !== i
      })
    },
-   important : function(i) {
-     this.importantInput += this.arrayInput.filter((element,index)=>{
-        return index == i
+   important : function() {
+     this.importantInput += this.arrayInput.filter((element)=>{
+        return element
       })
+      console.log(this.importantInput);
+   },
+   reset : function(){
+     this.importantInput = [];
    }
 },
 });
