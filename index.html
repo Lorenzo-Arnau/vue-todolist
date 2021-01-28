@@ -15,8 +15,11 @@
       <input v-model="inputMessage" @keyup.13="pushing" placeholder="Nuovo ToDo">
       <button type="button" name="button" @click="pushing">Submit</button>
     </div>
+    <div class="important-box">
+      <p class="important" v-for="element in importantInput">{{element}}</p>
+    </div>
     <div class="main-content">
-      <div class="" v-for="(i,index) in arrayInput">
+      <div :class="" v-for="(i,index) in arrayInput">
         <p class="content">Da Fare: {{i}}</p><span @click="eliminate(index)">X</span><span @click="important(index)">!</span>
       </div>
     </div>

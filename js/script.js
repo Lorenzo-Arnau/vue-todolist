@@ -3,6 +3,7 @@ var app = new Vue({
  el: '#root',
  data:{
    arrayInput:[],
+   importantInput:[],
    inputMessage:'',
  },
  methods:{
@@ -19,7 +20,7 @@ var app = new Vue({
      })
    },
    important : function(i) {
-     this.arrayInput = this.arrayInput.filter((element,index)=>{
+     this.importantInput += this.arrayInput.filter((element,index)=>{
         return index == i
       })
    }
